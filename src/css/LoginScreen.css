@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:wght@300;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.loginScreen {
+  position: relative;
+}
+
+.Netflix-logo {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 160px;
+  font-weight: 600;
+  z-index: 200;
+}
+
+.sign-in {
+  padding: 6px 15px;
+  position: absolute;
+  right: 160px;
+  top: 20px;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 200;
+  border-radius: 5px;
+}
+
+.sign-in:hover {
+  background-color: rgb(193, 17, 25);
+}
+
+.gradient {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+/* .loginScreen-container{
+    z-index: 200;
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding:20px;
+    left: 0;
+    right: 0;
+} */
+
+.loginScreen-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid rgb(35, 35, 35);
+  background-image: url("../assets/NG-en-20230918.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.loginScreen-container-inner-container {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+.loginScreen-container-inner-container p {
+  font-size: 1.4rem;
+}
+
+.sectionTv {
+  display: flex;
+  height: 500px;
+  border-bottom: 5px solid rgb(35, 35, 35);
+}
+
+.sectionTv .tt {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sectionTv .t {
+  width: 50%;
+}
+.sectionTvText {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sectionTv img {
+  width: 75%;
+  max-width: 600px;
+}
+
+.sectionTv h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.sectionTv p {
+  font-size: 1.5rem;
+}
+
+.sectionThree {
+  display: flex;
+  height: 500px;
+  border-bottom: 5px solid rgb(35, 35, 35);
+}
+
+.sectionThree .img {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sectionThree img {
+  width: 450px;
+  height: 350px;
+}
+
+.sectionThreeText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionThreeText div {
+  width: 80%;
+}
+
+.sectionThreeText h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.sectionThreeText p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.sectionFour {
+  height: 400px;
+  padding-left: 18%;
+  border-bottom: 5px solid rgb(35, 35, 35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sectionFour h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  width: 25%;
+  margin-bottom: 1.5rem;
+}
+
+.sectionFour p {
+  font-size: 1.5rem;
+  width: 35%;
+}
+
+.sectionFive {
+  display: flex;
+  height: 500px;
+  padding-left: 10%;
+  border-bottom: 5px solid rgb(35, 35, 35);
+}
+
+.sectionFive div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sectionFive img {
+  width: 85%;
+  max-width: 500px;
+}
+
+.sectionFive div h1 {
+  font-size: 3rem;
+  width: 70%;
+  margin-bottom: 1.5rem;
+}
+
+.sectionFive div p {
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+.sectionSix {
+  height: auto;
+  border-bottom: 5px solid rgb(35, 35, 35);
+
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.sectionSix h1 {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.sectionSix h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.sectionSix p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.sectionSix .question {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  background-color: rgb(45, 45, 45);
+}
+.sectionSix .question .one {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  cursor: pointer;
+}
+
+.sectionSix .question .one:hover {
+  background-color: rgb(65, 65, 65);
+}
+
+.sectionSix .question .one img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.sectionSix .question .two {
+  padding: 2rem 2rem;
+  border-top: 1px solid black;
+}
+
+.loginScreen-container h1 {
+  margin-top: 125px;
+  font-size: 3.126rem;
+  margin-bottom: 20px;
+}
+.loginScreen-container h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.loginScreen-container h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.input-container {
+  margin-top: 1rem;
+}
+
+input {
+  padding-left: 10px;
+  outline-width: 0;
+  height: 40px;
+  width: 300px;
+  border-radius: 0px;
+  border: none;
+  max-width: 600px;
+}
+
+.input-container button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  min-width: 90px;
+  max-width: 150px;
+  position: relative;
+  /* left:-15px; */
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
+.membershipComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.membershipComponent p {
+  margin-bottom: 1.5rem;
+}
+
+.membershipComponent form {
+  display: flex;
+  gap: 1rem;
+}
+
+.membershipComponent button {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 25px;
+  border: none;
+  gap: 0.8rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+.membershipComponent button:hover {
+  background-color: rgb(193, 17, 25);
+}
+
+.membershipComponent button img {
+  width: 17px;
+  height: 17px;
+}
+
+.membershipComponent input {
+  color: rgb(183, 183, 183);
+  background-color: rgb(15, 15, 15);
+  border: rgb(94, 94, 94) solid 1.5px;
+  border-radius: 4px;
+  padding: 1.7rem;
+  width: 350px;
+}
+
+.membershipComponent input:focus-visible {
+  border-color: white;
+}
+
+.membershipComponent input:focus::placeholder {
+  font-size: 12px;
+  transform: translateY(-15px);
+  transition: ease-in;
+  transition-duration: 300ms;
+}
+
+.membershipComponent p {
+  font-weight: 400;
+}
+
+footer {
+  height: 415px;
+  display: flex;
+  align-items: center;
+  color: rgb(179, 179, 179);
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+footer .wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+footer .wrapper p {
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+.listContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  text-decoration: underline;
+  margin-bottom: 3rem;
+}
+.listContainer li {
+  cursor: pointer;
+}
+
+footer .bottom p {
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+footer .bottom button {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15, 15, 15);
+  border: 1px solid rgb(94, 94, 94);
+  padding: 0.5rem 2rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+footer .bottom img {
+  width: 10px;
+  height: 5px;
+}
+
+.loginScreen {
+  max-width: 2500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 2000px) {
+  .loginScreen-container {
+    height: 30vh;
+  }
+}
+
+/* tab responsiveness */
+
+@media (max-width: 980px) {
+  .loginScreen-container {
+    height: 60vh;
+  }
+  .Netflix-logo {
+    top: 20px;
+    left: 5%;
+    width: 120px;
+  }
+  .sign-in {
+    right: 5%;
+    top: 20px;
+  }
+
+  .loginScreen-container-inner-container h1 {
+    font-size: 2rem;
+  }
+
+  .loginScreen-container-inner-container p {
+    font-size: 1rem;
+  }
+
+  .sectionTv {
+    flex-direction: column;
+    height: auto;
+    padding-top: 2rem;
+  }
+  .sectionTv .tt,
+  .sectionTv .t {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .sectionTvText {
+    text-align: center;
+  }
+  .sectionTv h1 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .sectionTv p {
+    font-size: 1rem;
+  }
+  .sectionTv img {
+    width: 70%;
+    margin-bottom: 5rem;
+  }
+
+  .sectionThree {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .sectionThree .img,
+  .sectionThreeText {
+    width: 100%;
+  }
+
+  .sectionThree .img {
+    justify-content: center;
+  }
+
+  .sectionThreeText {
+    text-align: center;
+  }
+
+  .sectionThreeText h1 {
+    font-size: 2rem;
+  }
+  .sectionThreeText p {
+    font-size: 1rem;
+  }
+  .sectionFour {
+    padding-left: 0;
+    text-align: center;
+    height: 250px;
+    padding: 0 10%;
+  }
+  .sectionFour h1,
+  .sectionFour p {
+    width: 100%;
+  }
+  .sectionFour p {
+    font-size: 1rem;
+  }
+
+  .sectionFive {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    padding-left: 0%;
+  }
+  .sectionFive div {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .sectionFive div h1 {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .sectionFive div p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .sectionFive img {
+    width: 70%;
+  }
+
+  .sectionSix .question {
+    width: 90%;
+  }
+  .sectionSix h1 {
+    font-size: 1.9rem;
+  }
+  .sectionSix h2 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .sectionSix p {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+  footer {
+    min-height: 500px;
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .listContainer {
+    flex-wrap: wrap;
+  }
+}
+
+/* mobile responsiveness */
+
+@media (max-width: 615px) {
+  .membershipComponent form {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .membershipComponent button {
+    width: 250px;
+  }
+  .membershipComponent input {
+    width: 100%;
+  }
+  .loginScreen-container {
+    height: 65vh;
+  }
+  .Netflix-logo {
+    top: 30px;
+    width: 110px;
+  }
+  .sign-in {
+    top: 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  .membershipComponent form {
+    width: 90%;
+    text-align: center;
+  }
+  .loginScreen-container-inner-container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .loginScreen-container-inner-container {
+    gap: 1.5rem;
+    margin-top: 5rem;
+  }
+  .loginScreen-container-inner-container h2 {
+    font-size: 1.2rem;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+  }
+
+  .loginScreen-container-inner-container p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1.4rem;
+  }
+  .membershipComponent button {
+    width: 200px;
+    font-size: 1rem;
+  }
+  .Netflix-logo {
+    top: 20px;
+    width: 100px;
+  }
+  .sign-in {
+    top: 20px;
+  }
+  .sectionThree img {
+    width: 90%;
+  }
+  .sectionSix .membershipComponent p {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+}

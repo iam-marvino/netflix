@@ -1,0 +1,89 @@
+.profileScreen {
+  height: 100%;
+  color: white;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%;
+  max-width: 800px;
+}
+
+.info {
+  display: flex;
+  align-self: center;
+}
+
+.avatar {
+  height: 100px;
+}
+
+#Hone {
+  font-size: 50px;
+  font-weight: 400;
+  border-bottom: 1px solid #282c3d;
+  margin-bottom: 20px;
+}
+
+.details {
+  color: white;
+  margin-left: 25px;
+  flex: 1;
+}
+
+.details h2 {
+  background-color: gray;
+  padding: 15px;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.SignOut {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 5%;
+  width: 100%;
+  background-color: #e50914;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.plans {
+  margin-top: 20px;
+}
+
+.plans h3 {
+  border-bottom: 1px solid #282c3d;
+}
+
+@media (max-width: 490px) {
+  #Hone {
+    font-size: 40px;
+  }
+  .body {
+    padding-top: 40%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 370px) {
+  #Hone {
+    font-size: 30px;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .avatar {
+    width: 80px;
+    margin-bottom: 1rem;
+  }
+
+  .body {
+    width: 80%;
+  }
+}

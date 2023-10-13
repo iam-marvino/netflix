@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.SignUpScreen {
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: -webkit-fill-available;
+  overflow: hidden;
+  background-image: url("../assets/NG-en-20230918.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gradient {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.NetflixLogo {
+  z-index: 100;
+  width: 200px;
+  position: absolute;
+  top: 0px;
+  left: 40px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.form-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 3rem;
+  border-radius: 5px;
+}
+
+.signUp-form {
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.signUp-form input {
+  height: 40px;
+  padding: 5px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 100%;
+  margin-bottom: 7px;
+  background-color: rgb(51, 51, 51);
+  max-width: 600px;
+  color: rgb(140, 140, 140);
+}
+
+.signUp-form button {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+}
+
+.link:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.grey {
+  color: gray;
+}
+
+.signUp-form h1 {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.signUp-form h4 {
+  text-align: left;
+  margin-top: 30px;
+}
+
+@media (max-width: 550px) {
+  .SignUpScreen {
+    background-color: black;
+  }
+  .NetflixLogo {
+    width: 120px;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .form-container {
+    width: 80%;
+    padding: 0.7rem;
+  }
+}
